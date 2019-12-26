@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:theme="@style/toolbarTheme">
+
+    <item
+
+        android:title="Navigation bar"
+        android:id="@+id/navigation_bar"
+        app:showAsAction="always"
+        android:orderInCategory="100"/>
+
+
+</menu>
