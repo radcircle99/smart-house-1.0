@@ -34,6 +34,8 @@
                 android:layout_alignParentEnd="true"
                 app:tabBackground="@android:color/white"
                 app:tabGravity="fill"
+                app:tabIndicatorHeight="1dp"
+                app:tabIndicatorAnimationDuration="@android:integer/config_mediumAnimTime"
                 app:tabIndicatorColor="#D81B60"
                 app:tabMode="fixed"
                 app:tabTextColor="@color/colortab" />
