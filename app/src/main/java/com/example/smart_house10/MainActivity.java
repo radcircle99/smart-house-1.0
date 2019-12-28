@@ -1,6 +1,7 @@
 package com.example.smart_house10;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.ViewPager;
@@ -15,7 +16,7 @@ import android.widget.TextView;
 import com.example.smart_house10.Adapters.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
     private CardView cardView,cardView1,cardView2;
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -60,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
         adapter.AddFragment(new CapTerrasseFragment(),"Terrasse");
         adapter.AddFragment(new CapCuisineFragment(),"Cuisine");
         adapter.AddFragment(new CapChambreparFragment(),"Chambre parents");
-        adapter.AddFragment(new CapChambreparFragment(),"Chambre enfants");
+        adapter.AddFragment(new CapChambrenfFragment(),"Chambre enfants");
 
-        adapter.AddFragment(new CapChambreparFragment(),"Chambre amis");
+        adapter.AddFragment(new CapChambreamFragment(),"Chambre amis");
         //Adapter Setup
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);

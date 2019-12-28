@@ -23,7 +23,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/Cardcham"
+                    android:id="@+id/Cardchamp"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
@@ -94,6 +94,7 @@
                     android:id="@+id/temp_champ"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
+                    android:foreground="?attr/selectableItemBackground"
                     android:background="@drawable/circle"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
@@ -105,6 +106,7 @@
                     android:id="@+id/humi_champ"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
+                    android:foreground="?attr/selectableItemBackground"
                     android:background="@drawable/circleyel"
                     android:layout_margin="10dp"
                     android:layout_gravity="center"
@@ -116,6 +118,7 @@
                     android:id="@+id/lumi_champ"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
+                    android:foreground="?attr/selectableItemBackground"
                     android:background="@drawable/circlegreen"
                     android:layout_margin="10dp"
                     android:layout_gravity="center"

@@ -1,6 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <!--Mise en place d'une page glissante et déroulante-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Cardchamenf"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/smart_house">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chambre_enfants"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textcard1"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp"
+                            android:text="Chambre"
+                            android:textColor="@android:color/white"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textcard2"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="30dp"
+                            android:text="Enfants"
+                            android:textColor="@android:color/white"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Vos capteurs"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btn_add_chamenf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="180dp"
+                    android:src="@drawable/ic_add_to_photos_black_24dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/temp_chamenf"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@drawable/circle"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_wi_thermometer"
+                    android:foregroundGravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/humi_chamenf"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@drawable/circleyel"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_invert_colors_black_24dp"
+                    android:foregroundGravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/lumi_chamenf"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@drawable/circlegreen"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_lightbulb_outline_black_24dp"
+                    android:foregroundGravity="center"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/black"
+                android:clipToPadding="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    android:text="Vos actionneurs"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/btn_add_acchamenf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="150dp"
+                    android:src="@drawable/ic_add_to_photos_black_24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:background="@android:color/white"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lampe_chamenf"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_lightbulb_outline_black_24dp"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@android:color/black"
+                            android:text="Lampe"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/clim_chamenf"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_wi_snowflake_cold"
+                            android:padding="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@android:color/black"
+                            android:text="Climatiseur"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

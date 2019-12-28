@@ -17,7 +17,7 @@ public class CapChambreparFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        view =inflater.inflate(R.layout.chmabrepar_fragment,container,false);
-    cardView = (CardView) view.findViewById(R.id.Cardcham);
+    cardView = (CardView) view.findViewById(R.id.Cardchamp);
     cardView.setRadius(40.f);
         return view;
     }

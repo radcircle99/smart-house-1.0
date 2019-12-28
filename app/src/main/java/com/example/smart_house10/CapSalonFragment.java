@@ -1,9 +1,11 @@
 package com.example.smart_house10;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,6 +19,7 @@ import com.ebanx.swipebtn.SwipeButton;
 public class CapSalonFragment extends Fragment {
     View view;
     CardView cardView,cardView1,cardView2;
+    ImageButton btn_temp_acq;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -24,11 +27,15 @@ public class CapSalonFragment extends Fragment {
        cardView = (CardView)view.findViewById(R.id.Cardsal);
        cardView.setRadius(25.f);
 
-        cardView1 = (CardView)view.findViewById(R.id.Cardsaltemp);
-        cardView1.setRadius(25.f);
+       btn_temp_acq=(ImageButton)view.findViewById(R.id.temp_sal);
+       btn_temp_acq.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(view.getContext(), Activity_temp.class);
+               startActivity(intent);
+           }
+       });
 
-        cardView2 = (CardView)view.findViewById(R.id.Cardsallum);
-        cardView2.setRadius(25.f);
 
         return view;
     }
