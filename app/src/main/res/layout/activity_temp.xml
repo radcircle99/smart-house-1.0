@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,7 +21,8 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager_temp_id"
             android:layout_width="match_parent"
-            android:layout_height="450dp">
+            android:layout_height="500dp"
+            android:layout_below="@+id/image_return">
         </androidx.viewpager.widget.ViewPager>
 
 
@@ -29,9 +30,9 @@
                 android:id="@+id/tabLayout_temp_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/viewpager_temp_id"
+
                 app:tabIndicatorGravity="top"
-                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 app:tabBackground="@android:color/white"
                 app:tabGravity="fill"
                 app:tabIndicatorHeight="1dp"
@@ -40,4 +41,4 @@
                 app:tabMode="fixed"
                 app:tabTextColor="@color/colortab" />
 
-</LinearLayout>
+</RelativeLayout>
