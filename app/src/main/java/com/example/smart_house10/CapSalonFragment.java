@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 
 import com.ebanx.swipebtn.OnStateChangeListener;
 import com.ebanx.swipebtn.SwipeButton;
-
+//Fragment relié à la vue de l'état du salon , c'est ici qu'à été développé le linkage avec l'acquisition de la température
 public class CapSalonFragment extends Fragment {
     View view;
     CardView cardView,cardView1,cardView2;
@@ -27,11 +27,21 @@ public class CapSalonFragment extends Fragment {
        cardView = (CardView)view.findViewById(R.id.Cardsal);
        cardView.setRadius(25.f);
 
+       //Cardview contrôlant les lampes du salon
+        cardView1 = (CardView) view.findViewById(R.id.lampe_sal);
+
        btn_temp_acq=(ImageButton)view.findViewById(R.id.temp_sal);
        btn_temp_acq.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                Intent intent = new Intent(view.getContext(), Activity_temp.class);
+               startActivity(intent);
+           }
+       });
+       cardView1.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(view.getContext(), Action_lamp_salon.class);
                startActivity(intent);
            }
        });

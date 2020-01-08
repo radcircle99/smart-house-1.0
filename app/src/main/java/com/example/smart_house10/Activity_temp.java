@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 import com.example.smart_house10.Adapters.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
-
+//Activitée réservée à la surveillance de l'état de la température
 public class Activity_temp extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -29,6 +29,7 @@ public class Activity_temp extends AppCompatActivity {
         adapter.AddFragment(new Temp_salon_manag(),"Evolution");
         //Adapter Setup
         viewPager.setAdapter(adapter);
+        //fusion du tablayout avec leview pager
         tabLayout.setupWithViewPager(viewPager);
         //Tab icons setup
      TabLayout.Tab text01 = tabLayout.getTabAt(0);

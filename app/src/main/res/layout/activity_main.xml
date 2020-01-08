@@ -76,7 +76,7 @@
     </com.google.android.material.appbar.CollapsingToolbarLayout>
 
 </com.google.android.material.appbar.AppBarLayout>
-
+    <!--partie des fragments relatifs aux parties de la maison-->
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"

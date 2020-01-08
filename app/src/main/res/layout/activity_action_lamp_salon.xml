@@ -1,9 +1,435 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Action_lamp_salon">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Mise en place d'une page glissante et déroulante-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Cardchamenf"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/smart_house">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/salon"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textcard1"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textcard2"
+                            android:layout_width="200dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="30dp"
+                            android:text="Salon"
+                            android:textColor="@android:color/white"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Lampes du salon"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btn_add_chamenf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="180dp"
+                    android:src="@drawable/ic_add_to_photos_black_24dp"/>
+            </LinearLayout>
+            <!--Partie des capteurs -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lamp_sal_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:text="Lampe de fond"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/black"
+                            android:layout_margin="10dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <com.ebanx.swipebtn.SwipeButton
+                                android:id="@+id/swipe_btn_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_centerInParent="true"
+                                app:inner_text="Allumer"
+                                app:inner_text_color="@android:color/white"
+                                app:inner_text_size="16sp"
+                                app:inner_text_top_padding="18dp"
+                                app:inner_text_bottom_padding="18dp"
+                                app:inner_text_background="@drawable/shape_rounded"
+                                app:button_image_height="70dp"
+                                app:button_image_width="100dp"
+                                app:button_image_disabled="@drawable/ic_lampe_down"
+                                app:button_image_enabled="@drawable/ic_lampe"
+                                app:button_left_padding="20dp"
+                                app:button_right_padding="20dp"
+                                app:button_top_padding="20dp"
+                                app:button_bottom_padding="20dp"
+                                app:button_background="@drawable/shape_button"
+                                app:initial_state="disabled"
+                                app:has_activate_state="true"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lamp_sal_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:text="Lampe de table à manger"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/black"
+                            android:layout_margin="10dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <com.ebanx.swipebtn.SwipeButton
+                                android:id="@+id/swipe_btn_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_centerInParent="true"
+                                app:inner_text="Allumer"
+                                app:inner_text_color="@android:color/white"
+                                app:inner_text_size="16sp"
+                                app:inner_text_top_padding="18dp"
+                                app:inner_text_bottom_padding="18dp"
+                                app:inner_text_background="@drawable/shape_rounded"
+                                app:button_image_height="70dp"
+                                app:button_image_width="100dp"
+                                app:button_image_disabled="@drawable/ic_lampe_down"
+                                app:button_image_enabled="@drawable/ic_lampe"
+                                app:button_left_padding="20dp"
+                                app:button_right_padding="20dp"
+                                app:button_top_padding="20dp"
+                                app:button_bottom_padding="20dp"
+                                app:button_background="@drawable/shape_button"
+                                app:initial_state="disabled"
+                                app:has_activate_state="true"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lamp_sal_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:text="Lampe principale"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/black"
+                            android:layout_margin="10dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <com.ebanx.swipebtn.SwipeButton
+                                android:id="@+id/swipe_btn_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_centerInParent="true"
+                                app:inner_text="Allumer"
+                                app:inner_text_color="@android:color/white"
+                                app:inner_text_size="16sp"
+                                app:inner_text_top_padding="18dp"
+                                app:inner_text_bottom_padding="18dp"
+                                app:inner_text_background="@drawable/shape_rounded"
+                                app:button_image_height="70dp"
+                                app:button_image_width="100dp"
+                                app:button_image_disabled="@drawable/ic_lampe_down"
+                                app:button_image_enabled="@drawable/ic_lampe"
+                                app:button_left_padding="20dp"
+                                app:button_right_padding="20dp"
+                                app:button_top_padding="20dp"
+                                app:button_bottom_padding="20dp"
+                                app:button_background="@drawable/shape_button"
+                                app:initial_state="disabled"
+                                app:has_activate_state="true"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lamp_sal_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:text="Lampe de sortie"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/black"
+                            android:layout_margin="10dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <com.ebanx.swipebtn.SwipeButton
+                                android:id="@+id/swipe_btn_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_centerInParent="true"
+                                app:inner_text="Allumer"
+                                app:inner_text_color="@android:color/white"
+                                app:inner_text_size="16sp"
+                                app:inner_text_top_padding="18dp"
+                                app:inner_text_bottom_padding="18dp"
+                                app:inner_text_background="@drawable/shape_rounded"
+                                app:button_image_height="70dp"
+                                app:button_image_width="100dp"
+                                app:button_image_disabled="@drawable/ic_lampe_down"
+                                app:button_image_enabled="@drawable/ic_lampe"
+                                app:button_left_padding="20dp"
+                                app:button_right_padding="20dp"
+                                app:button_top_padding="20dp"
+                                app:button_bottom_padding="20dp"
+                                app:button_background="@drawable/shape_button"
+                                app:initial_state="disabled"
+                                app:has_activate_state="true"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lamp_sal_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:text="Lampe de fond"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/black"
+                            android:layout_margin="10dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <com.ebanx.swipebtn.SwipeButton
+                                android:id="@+id/swipe_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_centerInParent="true"
+                                app:inner_text="Allumer"
+                                app:inner_text_color="@android:color/white"
+                                app:inner_text_size="16sp"
+                                app:inner_text_top_padding="18dp"
+                                app:inner_text_bottom_padding="18dp"
+                                app:inner_text_background="@drawable/shape_rounded"
+                                app:button_image_height="70dp"
+                                app:button_image_width="100dp"
+                                app:button_image_disabled="@drawable/ic_lampe_down"
+                                app:button_image_enabled="@drawable/ic_lampe"
+                                app:button_left_padding="20dp"
+                                app:button_right_padding="20dp"
+                                app:button_top_padding="20dp"
+                                app:button_bottom_padding="20dp"
+                                app:button_background="@drawable/shape_button"
+                                app:initial_state="disabled"
+                                app:has_activate_state="true"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

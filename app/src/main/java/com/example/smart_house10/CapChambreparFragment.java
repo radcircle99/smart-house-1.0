@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-
+//Fragment relié à la vue de l'état dans la chambre des parents
 public class CapChambreparFragment extends Fragment {
     CardView cardView;
     View view;

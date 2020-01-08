@@ -39,14 +39,7 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.listener.ChartTouchListener;
 import com.github.mikephil.charting.listener.OnChartGestureListener;
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
-import com.jjoe64.graphview.DefaultLabelFormatter;
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.GridLabelRenderer;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.DataPointInterface;
-import com.jjoe64.graphview.series.LineGraphSeries;
-import com.jjoe64.graphview.series.OnDataPointTapListener;
-import com.jjoe64.graphview.series.Series;
+
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -153,7 +146,7 @@ public class Temp_salon_manag extends Fragment implements OnChartGestureListener
     }
     public void getTemps() {
 
-        //Définition des limites
+        //Définition des limites au cas on devrait alarmer l'utilisateur
     /*    LimitLine upper_limit = new LimitLine(30f,"Chaleur intense");
         upper_limit.setLineWidth(4f);
         upper_limit.enableDashedLine(10f,10f,0f);

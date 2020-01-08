@@ -83,7 +83,7 @@
                     android:layout_marginLeft="180dp"
                     android:src="@drawable/ic_add_to_photos_black_24dp"/>
             </LinearLayout>
-
+            <!--Partie des capteurs -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
                     android:layout_margin="10dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:src="@drawable/ic_lightbulb_outline_black_24dp"
+                    android:src="@drawable/ic_lightbulb_outline_yellow_24dp"
                     android:foregroundGravity="center"/>
 
             </LinearLayout>
@@ -136,7 +136,7 @@
                 android:layout_margin="5dp"
                 android:background="@android:color/black"
                 android:clipToPadding="false" />
-
+            <!--Partie des actionneurs -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -183,7 +183,7 @@
                         <ImageView
                             android:layout_width="150dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/ic_lightbulb_outline_black_24dp"
+                            android:src="@drawable/ic_lightbulb_outline_yellow_24dp"
                             android:padding="10dp"/>
                         <TextView
                             android:layout_width="wrap_content"

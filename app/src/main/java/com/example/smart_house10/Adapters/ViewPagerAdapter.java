@@ -15,7 +15,7 @@ import java.util.List;
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     private final List<Fragment> fragmentList = new ArrayList<>();
     private final List<String> FragmentListTitles = new ArrayList<>();
-
+//Une liste serait plus pratique pour créer autant de tab qu'on souhaite plus tard
 
     public ViewPagerAdapter (FragmentManager fm)
     {

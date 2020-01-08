@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
+//Fragment relié à la vue de l'état de la terrasse
 public class CapTerrasseFragment extends Fragment {
 
     View view;

@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.smart_house10.Adapters.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
-
+//
 public class MainActivity extends AppCompatActivity  {
     private CardView cardView,cardView1,cardView2;
     private Toolbar toolbar;

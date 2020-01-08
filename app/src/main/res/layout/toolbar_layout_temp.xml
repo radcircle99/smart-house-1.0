@@ -10,6 +10,6 @@
     app:theme="@style/AppTheme"
     >
 
-
+    <!--Barre d'outil pour l'activité réservée à l'acquisition de la température -->
 
 </androidx.appcompat.widget.Toolbar>

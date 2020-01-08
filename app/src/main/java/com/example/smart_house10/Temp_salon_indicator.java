@@ -46,6 +46,7 @@ public class Temp_salon_indicator extends Fragment {
         circularProgress.setMaxProgress(100); //interval (30-45)+
         return view;
     }
+    //Fonction qui nous permettra de réceptionner la température du système
     private void getTempValue() {
         Thread thread=new Thread(new Runnable() {
             @Override
