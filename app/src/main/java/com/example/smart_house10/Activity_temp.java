@@ -30,6 +30,14 @@ public class Activity_temp extends AppCompatActivity {
         //Adapter Setup
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+        //Tab icons setup
+     TabLayout.Tab text01 = tabLayout.getTabAt(0);
+     TabLayout.Tab text02 = tabLayout.getTabAt(1);
+        text01.setText("");
+        text02.setText("");
+        text02.setIcon(R.drawable.ic_action_name);
+        text01.setIcon(R.drawable.ic_action_name_temp);
+
 
         btn_return =(ImageButton)findViewById(R.id.image_return);
         btn_return.setOnClickListener(new View.OnClickListener() {

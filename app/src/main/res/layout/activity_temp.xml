@@ -21,8 +21,10 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager_temp_id"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:layout_below="@+id/image_return">
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/image_return"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
         </androidx.viewpager.widget.ViewPager>
 
 
@@ -39,6 +41,6 @@
                 app:tabIndicatorAnimationDuration="@android:integer/config_mediumAnimTime"
                 app:tabIndicatorColor="#D81B60"
                 app:tabMode="fixed"
-                app:tabTextColor="@color/colortab" />
+             />
 
 </RelativeLayout>

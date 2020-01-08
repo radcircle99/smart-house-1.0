@@ -7,5 +7,6 @@
     <color name="colortab">#CC000000</color>
     <color name="colortabIndicator">#0E8B00</color>
     <color name="bg_act1">#00333639</color>
-    <color name="temp">#141418</color>
+    <color name="temp">#191B1F</color>
+    <color name="graph">#2084C2</color>
 </resources>
